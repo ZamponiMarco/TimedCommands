@@ -1,0 +1,66 @@
+commands:
+  incorrect-usage: "&7Type &6/tc help &7to see the command usage"
+  not-enough-parameters: "&cYou didn't provide enough parameters to the timed command"
+gui:
+  timed-command:
+    description:
+      - "&6&lLeft Click &7to modify it."
+      - "&6&lRight Click &7to delete it."
+    name:
+      - "&7&oThe name of the command"
+      - "&7&oTo start the command"
+      - "&7&oexecution use the command"
+      - "&c/tc start &e[name] &6<args>"
+      - "&7&oTo execute the command you"
+      - "&7&owill need the permission:"
+      - "&7&otimedcommands.start.&e[name]"
+    placeholders:
+      - "&7&oList of placeholders that"
+      - "&7&owill be inserted into the"
+      - "&7&ocommands. The way"
+      - "&7&oplaceholders are placed"
+      - "&7&ointo the lists is the same"
+      - "&7&oorder in which you need to"
+      - "&7&oinput &6<args> &7&oin the"
+      - "&c/tc start &7&ocommand."
+    commands:
+      - "&7&oThe list of commands that"
+      - "&7&owill be executed."
+  single-command:
+    description:
+      - "&6&lLeft Click &7to modify it."
+      - "&6&lRight Click &7to delete it."
+      - "&6&l[1] &7&o -1s     &6&l[2] &7&o +1s"
+      - "&6&l[3] &7&o -1m     &6&l[4] &7&o +1m"
+      - "&6&l[5] &7&o -1h     &6&l[6] &7&o +1h"
+      - "&6&l[7] &7&o -1d     &6&l[8] &7&o +1d"
+    delay:
+      - "&7&oThe delay after which the"
+      - "&7&ocommand is executed."
+    command:
+      - "&7&oThe string of the command without the"
+      - "&7&oleading / thatwill be executed after"
+      - "&7&othe delay. Inside these strings"
+      - "&7&oyou can insert the placeholders"
+      - "&7&oin this way: &c%[placeholder]%"
+  placeholder:
+    description:
+      - "&6&lLeft Click &7to modify it."
+      - "&6&lRight Click &7to delete it."
+    placeholder:
+      - "&7&oThe name of the placeholder."
+      - "&7&oThe commands that will be"
+      - "&7&oexecuted will replace all the"
+      - "&7&ooccurrencies of &c%[placeholder]%"
+      - "&7&oinside them with the arguments"
+      - "&7&opassed in input in the "
+      - "&c/tc start &7&ocommand."
+  time-delay:
+    seconds:
+      - "&7&oSeconds of delay."
+    minutes:
+      - "&7&oMinutes of delay."
+    hours:
+      - "&7&oHours of delay."
+    days:
+      - "&7&oDays of delay."

@@ -1,0 +1,14 @@
+name: TimedCommands
+author: jummes
+version: ${project.version}
+main: com.github.jummes.timedcommands.TimedCommands
+api-version: 1.14
+commands:
+  tc:
+permissions:
+  timedcommands.admin.help:
+    default: op
+    description: Help command
+  timedcommands.admin.list:
+    default: op
+    description: List commands
