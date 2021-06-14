@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.jummes</groupId>
         <artifactId>timedcommands</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
     </parent>
     <artifactId>timedcommands-dist</artifactId>
     <url>http://maven.apache.org</url>
@@ -40,7 +40,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>com.github.jummes.libs</pattern>
-                                    <shadedPattern>${groupId}.${project.parent.artifactId}.libs</shadedPattern>
+                                    <shadedPattern>${project.groupId}.${project.parent.artifactId}.libs</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
@@ -57,7 +57,7 @@
                         <configuration>
                             <target>
                                 <copy file="../target/timedcommands-${project.version}.jar"
-                                      tofile="C:\Users\Marco\Desktop\test\plugins\timedcommands-${project.version}.jar"/>
+                                      tofile="C:\Users\marcz\OneDrive\Desktop\test\plugins\timedcommands-${project.version}.jar"/>
                             </target>
                         </configuration>
                         <goals>

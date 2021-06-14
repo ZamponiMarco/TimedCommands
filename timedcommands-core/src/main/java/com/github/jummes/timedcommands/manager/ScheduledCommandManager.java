@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -15,7 +16,7 @@ public class ScheduledCommandManager extends ModelManager<ScheduledCommand> {
     private List<ScheduledCommand> commands;
 
     public ScheduledCommandManager(Class<ScheduledCommand> classObject, String databaseType, JavaPlugin plugin) {
-        super(classObject, databaseType, plugin);
+        super(classObject, databaseType, plugin, new HashMap<>());
         commands = database.loadObjects();
         Bukkit.getScheduler().runTaskTimer(TimedCommands.getInstance(), () -> {
             List<ScheduledCommand> toExecute = commands.stream().filter(command ->

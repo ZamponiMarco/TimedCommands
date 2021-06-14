@@ -5,7 +5,7 @@
 
     <groupId>com.github.jummes</groupId>
     <artifactId>timedcommands</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
     <name>TimedCommands</name>
     <properties>
@@ -19,7 +19,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.10</version>
+            <version>1.18.20</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
